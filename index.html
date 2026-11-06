@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playing Cards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="controls">
+        <button id="shuffle-btn"> Barajar Cartas</button>
+    </div>
+
+    <main id="playing-cards">
+        <!-- Carta 1 -->
+        <div class="card spade" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <div class="left"><span class="value">A</span><span class="suit">♠</span></div>
+                    <div class="middle"><span class="suit">♠</span></div>
+                    <div class="right"><span class="suit">♠</span><span class="value">A</span></div>
+                </div>
+                <div class="card-back">
+                    <span>♠</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carta 2 -->
+        <div class="card club" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <div class="left"><span class="value">2</span><span class="suit">♣</span></div>
+                    <div class="middle"><span class="suit">♣</span><span class="suit">♣</span></div>
+                    <div class="right"><span class="suit">♣</span><span class="value">2</span></div>
+                </div>
+                <div class="card-back">
+                    <span>♣</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carta 3 -->
+        <div class="card heart" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <div class="left"><span class="value">3</span><span class="suit">♥</span></div>
+                    <div class="middle"><span class="suit">♥</span><span class="suit">♥</span><span class="suit">♥</span></div>
+                    <div class="right"><span class="suit">♥</span><span class="value">3</span></div>
+                </div>
+                <div class="card-back">
+                    <span>♥</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Vincular el script de JS -->
+    <script src="script.js"></script>
+</body>
+</html>
